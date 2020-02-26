@@ -1,0 +1,8 @@
+C:\Users\Avell\Desktop\uds\Infra\bin\Debug\netcoreapp3.0\Infra.deps.json
+C:\Users\Avell\Desktop\uds\Infra\bin\Debug\netcoreapp3.0\Infra.dll
+C:\Users\Avell\Desktop\uds\Infra\obj\Debug\netcoreapp3.0\Infra.csprojAssemblyReference.cache
+C:\Users\Avell\Desktop\uds\Infra\obj\Debug\netcoreapp3.0\Infra.AssemblyInfoInputs.cache
+C:\Users\Avell\Desktop\uds\Infra\obj\Debug\netcoreapp3.0\Infra.AssemblyInfo.cs
+C:\Users\Avell\Desktop\uds\Infra\bin\Debug\netcoreapp3.0\Infra.pdb
+C:\Users\Avell\Desktop\uds\Infra\obj\Debug\netcoreapp3.0\Infra.dll
+C:\Users\Avell\Desktop\uds\Infra\obj\Debug\netcoreapp3.0\Infra.pdb

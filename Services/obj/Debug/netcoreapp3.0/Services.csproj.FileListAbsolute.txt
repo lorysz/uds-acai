@@ -1,0 +1,11 @@
+C:\Users\Avell\Desktop\uds\Services\bin\Debug\netcoreapp3.0\Services.deps.json
+C:\Users\Avell\Desktop\uds\Services\bin\Debug\netcoreapp3.0\Services.dll
+C:\Users\Avell\Desktop\uds\Services\bin\Debug\netcoreapp3.0\Services.pdb
+C:\Users\Avell\Desktop\uds\Services\bin\Debug\netcoreapp3.0\Infra.dll
+C:\Users\Avell\Desktop\uds\Services\bin\Debug\netcoreapp3.0\Infra.pdb
+C:\Users\Avell\Desktop\uds\Services\obj\Debug\netcoreapp3.0\Services.csprojAssemblyReference.cache
+C:\Users\Avell\Desktop\uds\Services\obj\Debug\netcoreapp3.0\Services.AssemblyInfoInputs.cache
+C:\Users\Avell\Desktop\uds\Services\obj\Debug\netcoreapp3.0\Services.AssemblyInfo.cs
+C:\Users\Avell\Desktop\uds\Services\obj\Debug\netcoreapp3.0\Services.csproj.CopyComplete
+C:\Users\Avell\Desktop\uds\Services\obj\Debug\netcoreapp3.0\Services.dll
+C:\Users\Avell\Desktop\uds\Services\obj\Debug\netcoreapp3.0\Services.pdb
