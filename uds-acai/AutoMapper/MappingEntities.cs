@@ -12,17 +12,16 @@ namespace uds_acai.AutoMapper
     {
         public MappingEntities()
         {
-            CreateMap<CadastroPedidoDto, Pedido>().ReverseMap();
-            //CreateMap<AtualizarUsuarioDto, Usuario>().ReverseMap();
-            //CreateMap<GridUsuarioDto, Usuario>().ReverseMap();
-            //CreateMap<LoginUsuarioDto, Usuario>().ReverseMap();
+            CreateMap<Pedido, PedidoDto>()
+                .ForMember(x => x.DescricaoSabor, z => z.MapFrom(m => m.Sabor.Descricao))
+                .ForMember(x => x.DescricaoTamanho, z => z.MapFrom(m => m.Tamanho.Descricao))
+                .ForMember(x => x.TempoTotalPreparoMinutos, z => z.MapFrom(m => m.TempoTotalPreparo));
 
-            // Map indicações
-            //CreateMap<CadastrarIndicacaoClienteDto, IndicacaoCliente>().ReverseMap();
-            //CreateMap<AtualizarIndicacaoClienteDto, IndicacaoCliente>().ReverseMap();
-            //CreateMap<IndicacaoCliente, GridIndicacaoDto>()
-            //    .ForMember(x => x.NomeIndicado, o => o.MapFrom(x => x.usuario.NomeCompleto))
-            //    .ReverseMap();
+            CreateMap<CadastroPedidoDto, Pedido>();
+            CreateMap<PersonalizacaoDto, PedidoPersonalizado>();
+            CreateMap<PedidoPersonalizado, PersonalizacaoDto>()
+                .ForMember(x => x.DescricaoPersonalizacao, z => z.MapFrom(m => m.Personalizacao.Descricao))
+                .ForMember(x => x.ValorPersonalizacao, z => z.MapFrom(m => m.Personalizacao.Preco));
         }
     }
 }

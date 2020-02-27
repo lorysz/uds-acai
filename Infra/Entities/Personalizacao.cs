@@ -12,5 +12,6 @@ namespace Infra.Entities
         public string Descricao { get; set; }
         public decimal Preco { get; set; }
         public int TempoPreparo { get; set; }
+        public List<PedidoPersonalizado> PedidoPersonalizado { get; set; }
     }
 }

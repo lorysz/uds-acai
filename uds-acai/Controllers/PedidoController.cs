@@ -30,6 +30,12 @@ namespace uds_acai.Controllers
             try
             {
                 var pedido = _service.BuscarPedido(id);
+
+                if (pedido == null)
+                {
+                    return BadRequest("Pedido não encontrado");
+                }
+
                 var retorno = _mapper.Map<PedidoDto>(pedido);
 
                 return Ok(retorno);
@@ -53,14 +59,16 @@ namespace uds_acai.Controllers
                 }
 
                 var pedidoEntity = _mapper.Map<Pedido>(value);
+                               
                 var idPedido = _service.CadastrarPedido(pedidoEntity);
                 return Ok("IdPedido:  "  + idPedido);
 
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(ex.Message);
             }
+       
         }
 
     }

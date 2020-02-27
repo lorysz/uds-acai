@@ -49,6 +49,9 @@ namespace uds_acai
 
             services.AddScoped<IPedidoService, PedidoService>();
             services.AddScoped<IPedidoRepository, PedidoRepository>();
+            services.AddScoped<ISaborRepository, SaborRepository>();
+            services.AddScoped<ITamanhoRepository, TamanhoRepository>();
+            services.AddScoped<IPersonalizacaoRepository, PersonalizacaoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

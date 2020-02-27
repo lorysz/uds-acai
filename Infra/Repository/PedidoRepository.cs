@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Repository
 {
@@ -17,7 +18,12 @@ namespace Infra.Repository
 
         public Pedido BuscarPedido(int id)
         {
-            return _con.Pedido.Find(id);
+            return _con.Pedido
+                .Include(x => x.Sabor)
+                .Include(x => x.Tamanho)
+                .Include("Personalizacao.Personalizacao")                
+                .Where(x => x.IdPedido == id)
+                .FirstOrDefault();
         }
 
         public int CadastrarPedido(Pedido pedido)

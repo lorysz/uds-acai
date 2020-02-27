@@ -11,6 +11,7 @@ namespace Services.Dto
         public int? IdSabor { get; set; }
         [Required(ErrorMessage = "O campo IdTamanho é obrigatório")]
         public int? IdTamanho { get; set; }
-        public List<int> IdPersonalizacao { get; set; }
+        public List<PersonalizacaoDto> Personalizacao { get; set; }
+
     }
 }
